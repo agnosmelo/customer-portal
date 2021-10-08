@@ -13,7 +13,9 @@ const ProjectCard = ({ title, status, endDate, state, onClick, small }) => {
         </ClayCard.Description>
         <div className="d-flex justify-content-between align-items-end">
           <ClayCard.Description className={`info-project${small ? " sm" : ""}`} truncate={false} displayType="text" tag="div" title={null}>
-            <ClayLabel className="border-0 text-capitalize font-weight-normal m-0" displayType="success">{status}</ClayLabel>
+            {status ? <ClayLabel className="border-0 text-capitalize font-weight-normal m-0" displayType="success">Active</ClayLabel> : <div>
+              <span className="circle"></span> No Status
+            </div>}
             <div className={`info-date${small ? " sm" : ""}`}>
               Ends on <span className="font-weight-bold end-date">{endDate}</span>
             </div>

@@ -1,7 +1,21 @@
 .home {
-    gap: 48px;
-}
+    .content {
+        gap: 48px;
+    }
 
+    .search-b {
+        width: 91%;        
+    }
+    .search-s{
+        width: 89%;
+    }
+    .length{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 20px;
+        color: #5A5469;
+    }   
+}
 // project-card
 
 .project-card {
@@ -86,6 +100,13 @@
         background-color: #EEF8EC;
         border-radius: 0.25rem;
     }
+}
+
+h1, .h1{
+    margin-bottom: 56px;
+    font-size: 43px;
+    line-height: 48px;
+    font-weight: 700;
 }
 
 h3, .h3 {
